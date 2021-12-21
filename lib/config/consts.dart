@@ -1,0 +1,1 @@
+const sportsApiKey = '5742bce8eae1972372b00a903bd67dbe';
