@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:sports_application/data/models/news_articles_model.dart';
 
 Future<List<Articles>> getFootballArticles() async {
-  const url = 'https://newsapi.org/v2/everything?q=soccer&apiKey=32dcf39b64364dad88a83d5f968a3239';
+  const url = 'https://newsapi.org/v2/everything?q=soccer&apiKey=YourAPIKey';
   final res = await http.get(Uri.parse(url),);
   dynamic body;
   if (res.statusCode == 200) {
@@ -25,7 +25,7 @@ Future<List<Articles>> getFootballArticles() async {
 }
 
 Future<List<Articles>> getBasketArticles() async {
-  const url = 'https://newsapi.org/v2/everything?q=nba&apiKey=32dcf39b64364dad88a83d5f968a3239';
+  const url = 'https://newsapi.org/v2/everything?q=nba&apiKey=YourAPIKey';
   final res = await http.get(Uri.parse(url),);
   dynamic body;
   if (res.statusCode == 200) {
