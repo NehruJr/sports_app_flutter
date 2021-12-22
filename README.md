@@ -1,16 +1,24 @@
 # sports_application
 
-A new Flutter project.
+handling three APis
 
-## Getting Started
+first for football 
+https://v3.football.api-sports.io/
+https://api-sports.io
 
-This project is a starting point for a Flutter application.
+second one for basketball
+https://v1.basketball.api-sports.io
+https://api-sports.io
 
-A few resources to get you started if this is your first Flutter project:
+thrid for news
+https://newsapi.org/
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Screenshot
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![alt text](https://i.ibb.co/mD2HL7w/Screenshot-1640127487.png)
+
+![alt text](https://i.ibb.co/fNPyxys/Screenshot-1640127483.png)
+
+![alt text](https://i.ibb.co/kxfsQqg/Screenshot-1640127473.png)
+
+
