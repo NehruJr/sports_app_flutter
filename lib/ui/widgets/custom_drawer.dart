@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_svg/svg.dart';
-import 'package:sports_application/ui/basketball/screens/home_screen/basketball_home_screen.dart';
-import 'package:sports_application/ui/football/screens/home_screen/football_home_screen.dart';
+
+import 'package:sports_application/ui/screens/screens.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({
     Key? key,
   }) : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
@@ -50,6 +50,17 @@ class CustomDrawer extends StatelessWidget {
               title: 'Basketball',
               icon: 'assets/images/svgIcons/basketball-svg.svg',
               textTheme: textTheme),
+          ListTile(
+            leading: SvgPicture.asset(
+              'assets/images/svgIcons/settings.svg',
+              width: 20,
+              height: 20,
+            ),
+            title: Text('User Settings', style: textTheme.headline5),
+            onTap: () {
+              Navigator.pushNamed(context, SettingsScreen.routeName);
+            },
+              ),
         ],
       ),
     );

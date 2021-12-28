@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const defaultPrimaryColor = Color(0xFF48D876);
-const appSecondaryColor = Color(0xFF232441);
+const kPrimaryColor = Color(0xFF48D876);
+const kSecondaryColor = Color(0xFF232441);
+
+enum KColors{
+  kPrimaryColor,
+  kSecondaryColor,
+}
 
 class SportsTheme {
   ThemeData appTheme() {
     return ThemeData(
       brightness: Brightness.light,
       colorScheme: const ColorScheme.light(
-        primary: defaultPrimaryColor,
+        primary: kPrimaryColor,
         onPrimary: Colors.white,
       ),
       scaffoldBackgroundColor: Colors.white,
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         iconTheme:IconThemeData(
           color: Colors.black
         ),
